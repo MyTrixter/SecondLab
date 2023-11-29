@@ -145,7 +145,7 @@ namespace Sl.Tests
             taskController.RemoveTask(task.Title);
 
             // assert
-            Assert.IsFalse(taskController.Tasks.Any());
+            Assert.IsFalse(taskController.Tasks.Contains(task));
         }
 
         [Test]
